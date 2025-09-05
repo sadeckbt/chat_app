@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Code d'activation - {{ site_name }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f8f9fa; padding: 20px;">
+    <div style="max-width: 600px; margin: auto; background-color: #ffffff; padding: 20px; border-radius: 5px; border: 1px solid #dee2e6;">
+
+        <h1 style="text-align: center; color: #343a40;">{{ site_name }}</h1>
+
+        <h2 style="color: #dc3545;">Votre code d'activation</h2>
+
+        <p>
+            Bonjour,<br>
+            Merci de vous être inscrit sur notre site.<br>
+            Veuillez utiliser le code suivant pour activer votre compte :
+        </p>
+
+        <p style="font-size: 24px; font-weight: bold; color: #dc3545;">
+            Code : {{ otp }}
+        </p>
+
+        <hr style="margin: 30px 0;">
+
+        <p style="text-align: center; font-size: 16px; color: #6c757d;">
+            Suivez-nous sur les réseaux sociaux
+        </p>
+
+        <div style="text-align: center; margin-top: 10px;">
+            <a href="https://facebook.com/tonsite" target="_blank" style="margin: 0 10px;">
+                <img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook" width="24" height="24">
+            </a>
+
+            <a href="https://twitter.com/tonsite" target="_blank" style="margin: 0 10px;">
+                <img src="https://cdn-icons-png.flaticon.com/24/733/733579.png" alt="Twitter" width="24" height="24">
+            </a>
+
+            <a href="https://instagram.com/tonsite" target="_blank" style="margin: 0 10px;">
+                <img src="https://cdn-icons-png.flaticon.com/24/733/733558.png" alt="Instagram" width="24" height="24">
+            </a>
+        </div>
+
+        <p style="text-align: center; font-size: 12px; color: #adb5bd; margin-top: 20px;">
+            © {{ year }} {{ site_name }}. Tous droits réservés.
+        </p>
+    </div>
+</body>
+</html>
