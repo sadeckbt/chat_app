@@ -15,8 +15,6 @@ class GroupChat(models.Model):
         return self.name
 
 
-
-
 class PrivateChat(models.Model):
     id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
     user1 = models.ForeignKey(User, on_delete=models.CASCADE, related_name='user1')
@@ -25,7 +23,6 @@ class PrivateChat(models.Model):
 
     def __str__(self):
         return f'{self.user1.email} -- {self.user2.email}'
-
 
 
 class Message(models.Model):

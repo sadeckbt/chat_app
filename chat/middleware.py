@@ -12,7 +12,6 @@ from jwt import decode as jwt_decode
 
 User = get_user_model()
 
-
 class JWTAuthMiddleware:
     """Middleware to authenticate user for channels"""
 
